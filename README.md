@@ -9,4 +9,9 @@ To play the game, follow these steps:
 - Knock down the platforms to reach the lowest ground.
 - Each fallen platform earns you points. Increase your total score.
 # Controls
-Players move the ball downwards using the touchscreen.
+- Players move the ball downwards using the touchscreen.
+# Features
+- Fun and addictive gameplay.
+- Different platform designs and accelerating game dynamics.
+- Leaderboard to save high scores and compete.
+- Optimized touchscreen control for mobile devices.
