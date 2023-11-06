@@ -20,7 +20,7 @@ public class ObstacleController : MonoBehaviour
             item.Shatter();
         }
         StartCoroutine(RemoveAllShatterPart());
-        ScoreManager.instance.AddScore(PlayerPrefs.GetInt("Level"));
+        ScoreManager.Instance.AddScore(PlayerPrefs.GetInt("Level", 1));
     }
 
     IEnumerator RemoveAllShatterPart()

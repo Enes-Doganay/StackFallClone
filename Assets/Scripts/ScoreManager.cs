@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : Singleton<ScoreManager>
 {
-    public static ScoreManager instance;
     public int score;
     public Text scoreText;
 
-    private void Awake()
+    protected override void Awake()
     {
-        MakeSingleton();
+        base.Awake();
+
         if (scoreText == null)
         {
             scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
@@ -20,6 +20,7 @@ public class ScoreManager : MonoBehaviour
     {
         AddScore(0);
     }
+    /*
     private void Update()
     {
         if (scoreText == null)
@@ -27,18 +28,7 @@ public class ScoreManager : MonoBehaviour
             scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         }
     }
-    private void MakeSingleton()
-    {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-    }
+    */
     public void AddScore(int value)
     {
         score += value;

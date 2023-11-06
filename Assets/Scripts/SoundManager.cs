@@ -2,27 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : Singleton<SoundManager>
 {
-    public static SoundManager instance;
     AudioSource audioSource;
     public bool sound;
-    private void Awake()
-    {
-        MakeSingleton();
-    }
-    private void MakeSingleton()
-    {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-    }
     public void SoundOnOff()
     {
         sound = !sound;
