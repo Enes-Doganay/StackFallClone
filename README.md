@@ -1,4 +1,9 @@
 # Stack Fall Clone
+
+
+https://github.com/Enes-Doganay/StackFallClone/assets/71710802/706aa34c-dede-497b-bcc4-d7416958d677
+
+
 # Game Description
 This game is a clone of the popular "Stack Fall" game, offering a fun and addictive gaming experience. Players control a small ball by moving it downwards on the touchscreen and their goal is to reach the bottom platform by knocking down the stacked platforms. The objective of the game is to drop the platforms and reach the lowest ground to achieve the highest score.
 
